@@ -1,6 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom"
 // import './App.css'
 import Hero from "./Components/Hero"
 import Header from './Components/Header'
@@ -10,8 +14,17 @@ function App() {
 
   return (
     <>
-    <Header/>
-    <Hero/>
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/home" element={<Hero/>}/>
+        <Route path="/" element={<Hero/>}/>
+        
+      </Routes>
+
+    </Router>
+   
+
     
     </>
   )
