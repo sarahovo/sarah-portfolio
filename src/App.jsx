@@ -8,6 +8,7 @@ import {
 // import './App.css'
 import Hero from "./Components/Hero"
 import Header from './Components/Header'
+import About from './Components/About'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Hero/>}/>
         <Route path="/" element={<Hero/>}/>
+        <Route path="/about" element={<About/>}/>
         
       </Routes>
 
