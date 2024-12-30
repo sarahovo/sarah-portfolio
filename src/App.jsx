@@ -8,6 +8,7 @@ import {
 // import './App.css'
 import Hero from "./Components/Hero"
 import Header from './Components/Header'
+import Footer from './Components/Footer'
 import About from './Components/About'
 function App() {
   const [count, setCount] = useState(0)
@@ -17,13 +18,13 @@ function App() {
     <>
     <Router>
       <Header/>
-      <Routes>
-        <Route path="/home" element={<Hero/>}/>
-        <Route path="/" element={<Hero/>}/>
-        <Route path="/about" element={<About/>}/>
-        
-      </Routes>
-
+        <Routes>
+          <Route path="/home" element={<Hero/>}/>
+          <Route path="/" element={<Hero/>}/>
+          <Route path="/about" element={<About/>}/>
+          
+        </Routes>
+      <Footer/>
     </Router>
    
 

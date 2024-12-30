@@ -4,9 +4,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function Header(){
+function Footer(){
     return(
         <HeaderContainer>
+        © {new Date().getFullYear()} Sarahovo. All Rights Reserved.
             <LogoContainer src={Logo}>
           </LogoContainer>
 
@@ -23,27 +24,27 @@ function Header(){
 
 
             </NavTextContainer>
-
+{/* 
             <IconsContainer> 
-                <HeaderIconsLink href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <HeaderIcons href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                     <InstagramIcon />
-                </HeaderIconsLink>
-                <HeaderIconsLink href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                </HeaderIcons>
+                <HeaderIcons href="https://www.x.com" target="_blank" rel="noopener noreferrer">
                     <XIcon />
-                </HeaderIconsLink>
-                <HeaderIconsLink href="https://github.com/sarahovo" target="_blank" rel="noopener noreferrer">
+                </HeaderIcons>
+                <HeaderIcons href="https://github.com/sarahovo" target="_blank" rel="noopener noreferrer">
                     <GitHubIcon />
-                </HeaderIconsLink>
+                </HeaderIcons>
 
-            </IconsContainer>
+            </IconsContainer> */}
         </HeaderContainer>
     )
 
 }
 
-export default Header
+export default Footer
 
-const HeaderIconsLink = styled.a`
+const HeaderIcons = styled.a`
   color: inherit;
   text-decoration: none;
 
@@ -53,11 +54,14 @@ const HeaderIconsLink = styled.a`
 `;
 
 const HeaderContainer = styled.div`
-// background:purple;
+background:purple;
 display:flex;
 justify-content: space-between;
 align-items: center;
 padding:0 20px;
+position: fixed;
+bottom: 0;
+width: 100%;
 `
 
 const LogoContainer = styled.img`
