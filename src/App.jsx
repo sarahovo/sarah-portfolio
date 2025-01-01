@@ -10,6 +10,8 @@ import Hero from "./Components/Hero"
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import About from './Components/About'
+import Gallery from './Components/Gallery'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -22,7 +24,8 @@ function App() {
           <Route path="/home" element={<Hero/>}/>
           <Route path="/" element={<Hero/>}/>
           <Route path="/about" element={<About/>}/>
-          
+          <Route path="/gallery" element={<Gallery/>}/>
+
         </Routes>
       <Footer/>
     </Router>
