@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from 'react-router-dom';
 import Logo from "../assets/Logo.png"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
@@ -12,13 +13,13 @@ function Header(){
 
             <NavTextContainer>
             <NavText>
-                Home
+                <StyledLink to="/">Home</StyledLink>
             </NavText>
             <NavText>
-                About
+                <StyledLink to="/about">About</StyledLink>
             </NavText>
             <NavText>
-                Resume
+                <StyledLink to="/gallery">Gallery</StyledLink>
             </NavText>
 
 
@@ -79,9 +80,18 @@ width:1000px;
 `
 
 const NavText = styled.h3`
-// display:flex;
-`
+//   text-decoration: none; 
+`;
 
+const StyledLink = styled(Link)`
+  text-decoration: none; 
+  color: inherit;
+  font-weight: inherit; 
+  
+  &:hover {
+    color: orange; 
+  }
+`;
 const IconsContainer = styled.div`
 // background: brown;
 display:flex;
