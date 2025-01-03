@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { Link } from 'react-router-dom';
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Logo.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -54,15 +54,15 @@ const HeaderIconsLink = styled.a`
 `;
 
 const HeaderContainer = styled.div`
-// background:purple;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 display:flex;
 justify-content: space-between;
 align-items: center;
 padding:0 20px;
+z-index:99;
 `
 
 const LogoContainer = styled.img`
-background:green;
 display:flex;
 justify-content:center;
 align-items: center;

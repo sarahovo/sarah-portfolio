@@ -18,12 +18,11 @@ function Hero() {
 export default Hero;
 
 const HeroContainer =styled.div`
-background:red;
 height:500px;
 width:100%;
 display:flex;
-justify-content:center; //centers content horixontally
-align-items: center;      // Centers content vertically
+justify-content:center;     //centers content horixontally
+align-items: center;        // Centers content vertically
 
 `
 const HeroText = styled.div`
