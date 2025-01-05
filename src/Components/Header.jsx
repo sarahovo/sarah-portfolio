@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function Header(){
+const Header = () => {
     return(
         <HeaderContainer>
             <LogoContainer src={Logo}>
@@ -54,13 +54,17 @@ const HeaderIconsLink = styled.a`
 `;
 
 const HeaderContainer = styled.div`
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-display:flex;
-justify-content: space-between;
-align-items: center;
-padding:0 20px;
-z-index:99;
-`
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 99;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  background: white; 
+`;
 
 const LogoContainer = styled.img`
 display:flex;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import image from "../assets/Logo.png"
 
-function About() {
+const About = () => {
 
     return (
         <AboutContainer>

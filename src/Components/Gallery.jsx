@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import image from "../assets/Logo.png"
 
-function About() {
+const Gallery = () => {
 
     return (
         <GalleryContainer>
@@ -19,7 +19,7 @@ function About() {
     )
 }
 
-export default About;
+export default Gallery;
 
 const GalleryContainer = styled.div`
 background:red;

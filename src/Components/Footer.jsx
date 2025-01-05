@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function Footer(){
+const Footer = () => {
     return(
         <HeaderContainer>
         © {new Date().getFullYear()} Sarahovo. All Rights Reserved.
@@ -54,14 +54,16 @@ const HeaderIcons = styled.a`
 `;
 
 const HeaderContainer = styled.div`
-background:purple;
-display:flex;
-justify-content: space-between;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+display: flex;
+justify-content: space-evenly;
 align-items: center;
-padding:0 20px;
-position: fixed;
-bottom: 0;
+padding: 0 20px;
+z-index: 99;
+position: fixed; 
+bottom: 0; 
 width: 100%;
+background: white; 
 `
 
 const LogoContainer = styled.img`
