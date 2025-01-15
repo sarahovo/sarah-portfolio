@@ -1,12 +1,9 @@
 import styled from "styled-components"
 import Logo from "../assets/Logo.png"
-import InstagramIcon from '@mui/icons-material/Instagram';
-import XIcon from '@mui/icons-material/X';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
     return(
-        <HeaderContainer>
+        <FooterContainer>
         © {new Date().getFullYear()} Sarahovo. All Rights Reserved.
             <LogoContainer src={Logo}>
           </LogoContainer>
@@ -37,30 +34,22 @@ const Footer = () => {
                 </HeaderIcons>
 
             </IconsContainer> */}
-        </HeaderContainer>
+        </FooterContainer>
     )
 
 }
 
 export default Footer
 
-const HeaderIcons = styled.a`
-  color: inherit;
-  text-decoration: none;
 
-  &:hover {
-    color: orange;
-  }
-`;
-
-const HeaderContainer = styled.div`
+const FooterContainer = styled.div`
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 padding: 0 20px;
 z-index: 99;
-position: fixed; 
+position: relative; 
 bottom: 0; 
 width: 100%;
 background: white; 
