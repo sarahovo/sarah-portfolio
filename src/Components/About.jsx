@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import image from "../assets/Logo.png"
+import image from "../assets/me.png"
 
 const About = () => {
 
     return (
         <AboutContainer>
+             {/* <Title>About</Title> */}
             <AboutHeroContainer>
-                <Title>About</Title>
+               
                 <LogoContainer src={image} />
                 <SubTitle>hello I am Sarah and I am makeing an about page</SubTitle>
             </AboutHeroContainer>
@@ -90,12 +91,16 @@ cursor:pointer;
 `
 
 const LogoContainer = styled.img`
-background:green;
 display:flex;
 justify-content:center;
 align-items: center;
-height: 100px;
-width: 100px;
-border-radius: 50%;
-border: 2px solid black;
+object-fit:contain;
+background-color:green;
+max-width:300px;
+margin-top:100px;
+z-index:100;
+// height: 300px;
+// width: 300px;
+border-radius: 10px;
+// border: 2px solid black;
 `
