@@ -44,19 +44,10 @@ const Header = () => {
 
 export default Header
 
-const HeaderIconsLink = styled.a`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: orange;
-  }
-`;
-
 const HeaderContainer = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   z-index: 99;
@@ -64,27 +55,34 @@ const HeaderContainer = styled.div`
   top: 0; 
   width: 100%;
   background: white; 
+  height: 70px;
+  box-sizing: border-box; 
+
+  /* Hide header when screen width is too small */
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const LogoContainer = styled.img`
-display:flex;
-justify-content:center;
-align-items: center;
-height: 50px;
-width: 50px;
-border-radius: 50%;
-border: 2px solid black;
-`
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  flex-shrink: 0;
+`;
+
 const NavTextContainer = styled.div`
-background: yellow;
-justify-content: space-evenly;
-align-items: center;
-display:flex;
-width:1000px;
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 20px;
+  max-width: 800px;
+`;
 
 const NavText = styled.h3`
-//   text-decoration: none; 
+  margin: 0 10px;
 `;
 
 const StyledLink = styled(Link)`
@@ -96,10 +94,20 @@ const StyledLink = styled(Link)`
     color: orange; 
   }
 `;
+
 const IconsContainer = styled.div`
-// background: brown;
-display:flex;
-justify-content: space-evenly;
-align-items:center;
-width: 120px;
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  flex-shrink: 0;
+`;
+
+const HeaderIconsLink = styled.a`
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: orange;
+  }
+`;
