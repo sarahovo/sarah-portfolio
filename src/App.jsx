@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Gallery from './Components/Gallery';
 import MainHome from './Components/MainHome';
-import MainLayout from './MainLayout'
+// import MainLayout from './MainLayout'
 function App() {
   const [fade, setFade] = useState(1);
 
@@ -32,7 +32,7 @@ function App() {
     <div id="root">
     <Router>
       <Header />
-      <MainLayout>
+      {/* <MainLayout> */}
         <Routes>
           <Route path="/" element={ 
               <> 
@@ -44,7 +44,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
-      </MainLayout>
+      {/* </MainLayout> */}
       <Footer />
     </Router>
     </div>
