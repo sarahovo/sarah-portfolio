@@ -4,12 +4,12 @@ import HeroHome from '../assets/Hero.jpg';
 function Hero({ fade }) {
   return (
     <HeroContainer style={{ opacity: fade }}>
-      <HeroText>
+      <HeroTabs>
         <HeroButton>About me</HeroButton>
         <HeroButton>Projects</HeroButton>
         <HeroButton>Contact</HeroButton>
         <HeroButton>Resume</HeroButton>
-      </HeroText>
+      </HeroTabs>
     </HeroContainer>
   );
 }
@@ -32,8 +32,10 @@ const HeroContainer = styled.div`
   transition: opacity 0.3s ease-out;
 `;
 
-const HeroText = styled.div`
+const HeroTabs = styled.div`
   display: flex;
+  width:800px;
+  justify-content:space-evenly;
   background: rgba(0, 128, 0, 0.7); 
   padding: 20px;
   border-radius: 10px;
@@ -53,6 +55,7 @@ const HeroButton = styled.button`
   background-color: #fff;
   color: #000;
   font-weight: bold;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
   &:hover {
     background-color: #000;
