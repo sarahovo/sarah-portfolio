@@ -7,6 +7,42 @@ function MainHome() {
       <ProjectCard>Project 2</ProjectCard>
       <ProjectCard>Project 3</ProjectCard>
       <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
+      <ProjectCard>Project 1</ProjectCard>
+      <ProjectCard>Project 2</ProjectCard>
+      <ProjectCard>Project 3</ProjectCard>
+      <ProjectCard>Project 4</ProjectCard>
 
     </ProjectsContainer>
   );

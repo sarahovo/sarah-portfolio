@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Gallery from './Components/Gallery';
 import MainHome from './Components/MainHome';
+import ScrollToTopButton from './Components/ScrollToTopButton';
 // import MainLayout from './MainLayout'
 function App() {
   const [fade, setFade] = useState(1);
@@ -45,6 +46,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       {/* </MainLayout> */}
+      <ScrollToTopButton />
       <Footer />
     </Router>
     </div>
